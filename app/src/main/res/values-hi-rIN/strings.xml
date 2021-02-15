@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Language App</string>
+    <string name="app_name">भाषा ऐप</string>
+    <string name="phrases">वाक्यांश</string>
+    <string name="colors">रंग</string>
+    <string name="family_members">परिवार के सदस्य</string>
+    <string name="numbers">संख्या</string>
 </resources>

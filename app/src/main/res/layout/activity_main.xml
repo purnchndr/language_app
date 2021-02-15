@@ -9,19 +9,20 @@
 
     <TextView
         style="@style/Main_screen"
-        android:background="#FF8400"
+        android:layout_marginStart="16dp"
+        android:background="@color/orange"
         android:text="@string/numbers"
         android:onClick="number_bar"/>
 
     <TextView
         style="@style/Main_screen"
-        android:background="#389805"
+        android:background="@color/green"
         android:text="@string/family_members"
         android:onClick="family_bar"/>
 
     <TextView
         style="@style/Main_screen"
-        android:background="#9D00FF"
+        android:background="@color/purple"
         android:text="@string/colors"
         android:onClick="color_bar"/>
 
