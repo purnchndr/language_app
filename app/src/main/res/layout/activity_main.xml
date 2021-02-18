@@ -8,28 +8,27 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/numbers"
         style="@style/Main_screen"
-        android:layout_marginStart="16dp"
         android:background="@color/orange"
-        android:text="@string/numbers"
-        android:onClick="number_bar"/>
+        android:text="@string/numbers" />
 
     <TextView
+        android:id="@+id/family"
         style="@style/Main_screen"
         android:background="@color/green"
-        android:text="@string/family_members"
-        android:onClick="family_bar"/>
+        android:text="@string/family_members" />
 
     <TextView
+        android:id="@+id/colors"
         style="@style/Main_screen"
         android:background="@color/purple"
-        android:text="@string/colors"
-        android:onClick="color_bar"/>
+        android:text="@string/colors" />
 
     <TextView
+        android:id="@+id/phrases"
         style="@style/Main_screen"
         android:background="@color/sky_blue"
-        android:text="@string/phrases"
-        android:onClick="phrases_bar"/>
+        android:text="@string/phrases" />
 
 </LinearLayout>

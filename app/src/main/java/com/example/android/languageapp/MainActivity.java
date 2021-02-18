@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,26 +16,53 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
 
-    public void number_bar(View view) {
-        Intent number = new Intent(this,Numbers.class);
-        startActivity(number);
-    }
-    public void family_bar(View view) {
-        Intent number = new Intent(this,FamilyMembers.class);
-        startActivity(number);
-    }
-    public void phrases_bar(View view) {
-        Intent number = new Intent(this,Phrases.class);
-        startActivity(number);
-    }
-    public void color_bar(View view) {
-        Intent number = new Intent(this,Colors.class);
-        startActivity(number);
-    }
+        //Find the all views for further refrence
+        TextView number = (TextView) findViewById(R.id.numbers);
+        TextView family = (TextView) findViewById(R.id.family);
+        TextView color = (TextView) findViewById(R.id.colors);
+        TextView phrase = (TextView) findViewById(R.id.phrases);
 
-    public void main_screen(View view) {
-        setContentView(R.layout.activity_main);
+
+        //Set OnClickListener to all the views
+
+        //onClickListener for Numbers Activity//
+        number.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            Intent numbersIntent = new Intent(MainActivity.this, Numbers.class);
+            startActivity(numbersIntent);
+            }
+        });
+
+        //onClickListener for Colors Activity//
+        color.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent colorsIntent = new Intent(MainActivity.this, Colors.class);
+                startActivity(colorsIntent);
+            }
+        });
+
+        //onClickListener for Family Activity//
+        family.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent familyIntent = new Intent(MainActivity.this, FamilyMembers.class);
+                startActivity(familyIntent);
+            }
+        });
+
+        //onClickListener for Phrase Activity//
+        phrase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent phraseIntent = new Intent(MainActivity.this, Phrases.class);
+                startActivity(phraseIntent);
+            }
+        });
     }
+    Object[] hello = new  Object[10];
+
+
 }

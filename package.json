@@ -1,0 +1,22 @@
+{
+  "name": "language_app",
+  "version": "1.0.0",
+  "description": "\"language learning app\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/purnchndr/language_app.git"
+  },
+  "keywords": [
+    "language_app"
+  ],
+  "author": "Purnachandra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/purnchndr/language_app/issues"
+  },
+  "homepage": "https://github.com/purnchndr/language_app#readme"
+}
